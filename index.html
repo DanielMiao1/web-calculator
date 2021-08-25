@@ -10,25 +10,51 @@
 		<link rel="stylesheet" href="css/buttons.css">
 	</head>
 	<body>
-		<h1>Web Calculator</h1>
-		<div id="res"></div>
-		<div id="btns" class="buttonContainer">
-			<button class="buttonClass operand">7</button>
-			<button class="buttonClass operand">8</button>
-			<button class="buttonClass operand">9</button>
-			<button class="buttonClass operator">*</button>
-			<button class="buttonClass operand">4</button>
-			<button class="buttonClass operand">5</button>
-			<button class="buttonClass operand">6</button>
-			<button class="buttonClass operator">/</button>
-			<button class="buttonClass operand">1</button>
-			<button class="buttonClass operand">2</button>
-			<button class="buttonClass operand">3</button>
-			<button class="buttonClass operator">+</button>
-			<button id = "clr_btn" class="buttonClass evaluate">C</button>
-			<button class="buttonClass operand">0</button>
-			<button id = "eql_btn" class="buttonClass evaluate">=</button>
-			<button class="buttonClass operator">-</button>
+		<div id="main">
+			<form>
+				<textarea id="result" rows="1" readonly></textarea>
+			</form>
+			<table>
+				<tr>
+					<td>
+						<button id="Backspace" style="width: 108.5px;">CE</button>
+						<button id="sign">±</button>
+						<button id="ac">AC</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="number">7</button>
+						<button class="number">8</button>
+						<button class="number">9</button>
+						<button id="/">÷</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="number">4</button>
+						<button class="number">5</button>
+						<button class="number">6</button>
+						<button id="*">&times;</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="number">1</button>
+						<button class="number">2</button>
+						<button class="number">3</button>
+						<button id="-">—</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="number">0</button>
+						<button id=".">.</button>
+						<button id="=">=</button>
+						<button id="+">+</button>
+					</td>
+				</tr>
+			</table>
 		</div>
 		<script src="js/calculator.js"></script>
 	</body>
