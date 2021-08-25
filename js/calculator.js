@@ -5,6 +5,7 @@
 for (x of document.getElementsByClassName("number")) {
 	x.addEventListener("click", function() {
 		document.getElementById("result").value += this.innerHTML;
+		$("#result").scrollTop($("#result")[0].scrollHeight);
 	});
 };
 
