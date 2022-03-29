@@ -1,26 +1,20 @@
-/*
- * css/buttons.css: CSS for buttons
- * Daniel M
- */
-
 td button {
-        width: 50px;
-        height: 50px;
-        font-size: 25px;
-        margin: 2px;
-        cursor: pointer;
-        border: 2px solid black;
-        background-color: transparent;
-        color: white;
-        transition: 0.5s;
-        outline: none;
+	width: 50px;
+	height: 50px;
+	font-size: 25px;
+	margin: 2px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.3);
+	transition: 300ms;
+	outline: none;
 }
 
 td button:hover {
-        border: 2px solid #E7F7D3;
+	background: rgba(255, 255, 255, 0.45);
 }
 
 td button:active {
-        background-color: #7000FF;
-        transition: 0s;
+	background: rgba(255, 255, 255, 0.6);
 }

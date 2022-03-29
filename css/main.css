@@ -1,8 +1,3 @@
-/*
- * css/main.css: Main CSS file
- * Daniel M
- */
-
 ::-webkit-scrollbar {
 	width: 5px;
 }
@@ -19,36 +14,27 @@
 	background-color: #666666;
 }
 
-::selection {
-	background-color: #340054;
-	color: white;
-}
-
-::-moz-selection {
-	background-color: #340054;
-	color: white;
+body {
+	background: linear-gradient(80deg, #47ffa0, #19ded1);
 }
 
 #result {
 	width: 205px;
+	border-left: 5px solid transparent !important;
+	border-right: 5px solid transparent !important;
 	margin: 5px;
 	font-size: 25px;
 	padding: 5px;
-	border: 4px solid black;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.3);
 	outline: none;
 	word-wrap: break-word;
 	resize: none;
 	font-family: arial;
 }
 
-body {
-	background-color: #340054;
-}
-
 #main {
 	position: absolute;
-	transform: translateX(-50%) translateY(-50%);
-	top: 50%;
-	left: 50%;
+	transform: translateX(calc(50vw - 50%)) translateY(calc(50vh - 50%));
 }
-
